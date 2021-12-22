@@ -1,0 +1,40 @@
+{
+  "name": "postcss-peeling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "clean": "rm -rf .parcel-cache && rm -rf dist",
+    "example": "npm run clean && npx parcel ./examples/index.html --open",
+    "test": "node ./test/index.js"
+  },
+  "keywords": [
+    "postcss-peeling",
+    "换肤",
+    "postcss",
+    "plugin",
+    "css-var"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/z-juln/postcss-peeling"
+  },
+  "bugs": {
+    "email": "1850021148@qq.com"
+  },
+  "contributors": [
+    {
+      "name": "juln",
+      "email": "1850021148@qq.com"
+    }
+  ],
+  "author": "juln",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.1",
+    "postcss": "^8.4.5",
+    "postcss-nested": "^5.0.6"
+  }
+}

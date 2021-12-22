@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test: postcss-peeling</title>
+    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/common-theme.css">
+    <link rel="stylesheet" href="./src/white-theme.css">
+    <link rel="stylesheet" href="./src/dark-theme.css">
+</head>
+<body>
+    hhh
+    <br />
+    <button class="theme-btn">黑夜模式</button>
+    
+    <script>
+        const themeWrapper = document.querySelector('body')
+        const themeBtn = document.querySelector('.theme-btn')
+        themeBtn.onclick = () => {
+            const currentTheme = themeWrapper.getAttribute('theme') ?? 'white'
+            if (currentTheme === 'white') {
+                themeWrapper.setAttribute('theme', 'dark')
+                themeBtn.textContent = '白天模式'
+            } else if (currentTheme === 'dark') {
+                themeWrapper.removeAttribute('theme')
+                themeBtn.textContent = '黑夜模式'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+/* peeling-no-parse */
+body[theme='dark'] {
+    --primary-color: #ffffff;
+    --primary-bgColor: #000000;
+}

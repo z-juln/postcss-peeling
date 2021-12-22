@@ -1,0 +1,6 @@
+/* peeling-no-parse */
+body:not([theme='dark']) {
+    --primary-color: #000000;
+    --primary-bgColor: #ffffff;
+    --border-color: red;
+}
