@@ -69,7 +69,9 @@ const checkOpts = (opts) => {
         && excludes.every(item => typeof item === 'string')
     const validParams = validParams_colorMap
         && validParams_excludes
-    const existsCssFile = colorMap.every(fs.existsSync)
+    const existsCssFile = Array.isArray(colorMap)
+        ? colorMap.every(fs.existsSync)
+        : fs.existsSync(colorMap)
 
     if (!colorMap) {
         throwErr('参数colorMap不存在')
