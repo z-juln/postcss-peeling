@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "module": "index.js",
+  "typings": "./index.d.ts",
   "scripts": {
     "clean": "rm -rf .parcel-cache && rm -rf dist",
     "example": "npm run clean && npx parcel ./examples/index.html --open",
