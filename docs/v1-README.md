@@ -1,7 +1,5 @@
 # postcss-peeling
 一款用于换肤的postcss插件，基于postcss8和css变量
-当前版本: 2.0.0
-[v1文档链接](./docs/v1-README.md)
 
 ## 目的
 为了开发时不需要考虑css变量名，而是直接编写颜色值，再通过该插件将颜色转换成css变量名
@@ -14,17 +12,6 @@ yarn add postcss-peeling
 使用 npm
 ```cmd
 npm i postcss-peeling
-```
-
-## 全局安装
-> 使用命令建议全局安装
-使用 yarn
-```cmd
-yarn global add postcss-peeling
-```
-使用 npm
-```cmd
-npm i -g postcss-peeling
 ```
 
 ## 使用

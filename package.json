@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf .parcel-cache && rm -rf dist",
     "example": "npm run clean && npx parcel ./examples/index.html --open",
-    "test": "node ./test/index.js"
+    "test": "jest ./test/*.test.js"
   },
   "keywords": [
     "postcss-peeling",
@@ -36,5 +36,8 @@
     "parcel": "^2.0.1",
     "postcss": "^8.4.5",
     "postcss-nested": "^5.0.6"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
   }
 }
