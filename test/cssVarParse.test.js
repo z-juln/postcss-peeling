@@ -6,12 +6,14 @@ const resolveCss = (filename) =>
 describe("parse css-var", () => {
   it("api: peeling.cssVarParse", () => {
     const rules = `
+      :root {
         body {
           --primary-color: #000000;
           --primary-bgColor: #ffffff;
           --primary-borderColor: #ff0000;
         }
-      `;
+      }
+    `;
     const expected = {
       "--primary-color": "#000000",
       "--primary-bgColor": "#ffffff",
