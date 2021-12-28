@@ -13,7 +13,7 @@ const checkOpts = (opts) => {
   const validParams_cludes = (cludes) =>
     (cludes === undefined || isStrArrOrRegArr(cludes));
 
-  const validParams_colorMap = colorMap?.toString() === '[object Object]';
+  const validParams_colorMap = colorMap && colorMap.toString() === '[object Object]';
   const validParams_excludes = validParams_cludes(excludes);
   const validParams_includes = validParams_cludes(includes);
   const validParams =

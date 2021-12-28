@@ -7,7 +7,8 @@ const flipObj = (obj) => {
 
 const isMatch = (strOrReg, targetStr) => {
   if (typeof strOrReg === "string") {
-    return !!targetStr.match(strOrReg)?.[0];
+    const matchStr = targetStr.match(strOrReg);
+    return !!(matchStr && matchStr[0]);
   }
   return strOrReg.test(targetStr);
 };
