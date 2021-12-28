@@ -28,7 +28,7 @@ const peeling = (opts = {}) => {
       // postcss遍历css样式时调用，在这里可以快速获得type为decl的节点
       // console.log('decl: ', `${decl.props}: ${decl.value}`);
 
-      const from = decl.source.input.file ?? ""; // 测试环境input.file可能是undefined
+      const from = decl.source.input.file || ""; // 测试环境input.file可能是undefined
       const css = decl.source.input.css;
       // console.log('from: ', from);
 
