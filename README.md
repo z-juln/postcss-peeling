@@ -1,4 +1,7 @@
 # postcss-peeling
+
+> 由于该插件局限性较大，已停止维护
+
 一款用于换肤的postcss插件
 
 基于: postcss8, css变量
